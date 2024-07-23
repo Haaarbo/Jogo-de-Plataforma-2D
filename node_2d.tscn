@@ -261,6 +261,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7s4p2"]
+radius = 9.0
+height = 18.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r8ay3"]
 size = Vector2(694, 59)
@@ -286,6 +288,7 @@ autoplay = "idle"
 frame_progress = 0.590454
 
 [node name="playerCollision" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 7)
 shape = SubResource("CapsuleShape2D_7s4p2")
 
 [node name="floor" type="StaticBody2D" parent="."]
